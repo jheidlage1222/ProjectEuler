@@ -1,9 +1,16 @@
 import java.time.*;
-
 import java.util.*;
+
 
 public class App {
     public static void main(String[] args) {
+        Palindrome palindromeClass = new Palindrome();
+        palindromeClass.findLargestPalindrome();
+    }
+
+    static List<Long> terms = new ArrayList<Long>();
+
+    static void doPrimeFactorsfull(){
         Long numToFactor = 600851475143L;
         //numToFactor = 1787866L;
         /*List<Long> factors = getPrimeFactors(numToFactor);
@@ -25,9 +32,6 @@ public class App {
         System.out.printf("Time Elapsed: %n", timeElapsed);
         //System.out.print(primeFactor.toString() + " ");
     }
-
-    static List<Long> terms = new ArrayList<Long>();
-
     static List<Long> getPrimeFactors(Long numToFactor) {
         List<Long> factors = new ArrayList<>(0);
         for (Long i = numToFactor - 1L; i > 1; i--) {
