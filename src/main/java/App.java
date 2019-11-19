@@ -4,8 +4,8 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) {
-        Palindrome palindromeClass = new Palindrome();
-        palindromeClass.findLargestPalindrome();
+        SmallestMultiple smp = new SmallestMultiple();
+        smp.findSmallestMultiple();
     }
 
     static List<Long> terms = new ArrayList<Long>();
